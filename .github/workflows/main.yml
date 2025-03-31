@@ -1,6 +1,5 @@
-name: Deploy and Run Python Script
-
-on:
+- name: Make script executable
+  run: chmod +x main.pyon:
   push:
     branches:
       - main  # Change this to your deployment branch
@@ -27,5 +26,6 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      - name: Run Script
-        run: main.py  # Change to your script file
+          - name: Run Script
+  run: ./main.py
+
