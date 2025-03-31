@@ -11,9 +11,9 @@ import logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Define constants
-API_KEY = "your_api_key"
-API_SECRET = "your_api_secret"
-BASE_URL = "https://api.broker.com"  # Replace with your broker's API URL
+API_KEY = "hoUL9VOrAORK2GN5sDejUl7j6hOTBcXAZaIr0f1njCLPs4TZPHS6KCTL6PQZbpi9y"
+API_SECRET = "5JSm571NyCDeCaURZQOz0C7dT5JPFg6eB7sKnHFMzsGcZhCTq07JVyYxhfnR8t22"
+BASE_URL = "wss://fsteam.binance.com"  # Replace with your broker's API URL
 
 # Initialize broker API
 broker = BrokerAPI(api_key=API_KEY, api_secret=API_SECRET, base_url=BASE_URL)
